@@ -1,0 +1,276 @@
+
+/*---------------------Header------------------------*/
+
+header {
+    background: linear-gradient(to right,#6B4812, #1f1405);
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    padding: 10px 20px;
+    font-family: "Red Hat Display";
+    margin: 0;
+}
+
+.logo img {
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    padding: 20px;
+}
+
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.15s ease-in-out;
+}
+
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+
+#check {
+    display: none;}
+
+/*--------------------Psuedo-header------------------*/
+
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: 0.15s ease-in-out;
+}
+
+.menu li a:hover:after {
+    width: 100%;
+}
+
+.open-menu , .close-menu {
+    position: absolute;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+
+
+/*---------------------Footer------------------------*/
+
+footer {
+    background-color: black;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.links {
+    margin-top: 20px;
+}
+
+.links a {
+    margin: 0 60px;
+    text-decoration: none;
+    color: white;
+    font-family: "Red Hat Display";
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.footer-seperator-line {
+    border-top: 1px solid white;
+    margin: 0 10% 20px;
+}
+
+.under-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-logo img {
+    height: auto;
+    width: auto;
+    margin-left: 190px;
+    border-radius: 5px;
+}
+
+.under-footer div {
+    color: white;
+    margin-right: 190px;
+    font-family: "Red Hat Display";
+    font-size: 14px;
+}
+
+/*---------------------------------------------------*/
+
+
+.home-button {
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    font-family: "Red Hat Display";
+    font-weight: 500;
+    padding: 13px 55px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 7rem auto 7rem auto;
+    display: block;
+
+
+}
+
+.home-button-2 {
+    background-color: #F59D36;
+    color: white;
+    font-size: 25px;
+    font-family: "Red Hat Display";
+    font-weight: 500;
+    padding: 13px 55px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 7rem auto 7rem auto;
+    display: block;
+    text-decoration: none;
+}
+
+.home a {
+    text-decoration: none;
+}
+
+.home-button:hover {
+    background-color: #F59D36;
+
+}
+
+.home-button-2:hover {
+    background-color: white;
+    color: #F59D36;
+
+}
+
+/*---------------------------------------------------*/
+
+@media(max-width: 810px) {
+
+    .menu li a {
+        font-size: 18px;
+    }
+
+    .links a {
+        margin: 10px 20px 0;
+    }
+
+    .footer-seperator-line {
+        border-top: 1px solid white;
+        margin: 0 5% 20px;
+    }
+
+    .footer-logo {
+        margin-left: -140px;
+    }
+
+    .under-footer div {
+        margin-right: 40px;
+    }
+
+}
+
+/*---------------Hamburger menu hidden---------------*/
+
+@media(max-width: 610px){
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        height: 80vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background: linear-gradient(to right,#6B4812, #1f1405);
+        opacity: 0.90;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .menu li {
+        margin-top: 10px;
+    }
+
+    .menu li a {
+        padding: 10px;
+        font-size: 24px;
+    }
+
+    .open-menu , .close-menu {
+        display: block;
+    }
+
+    #check:checked ~ .menu {
+        right: 0;}
+}
+
+@media(max-width: 390px) {
+
+    .logo img {
+        width: 70%;
+        margin-left: 2px;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .links a {
+        margin: 10px 0;
+    }
+
+    .footer-seperator-line {
+        margin-top: 20px;
+    }
+
+    .footer-logo {
+        width: 30%;
+        height: auto;
+        margin-left: -175px;
+        padding-right: 25px;
+    }
+
+    .under-footer div {
+        font-size: 10px;
+        text-wrap: nowrap;
+        padding-left: 25px;
+    }
+
+
+}

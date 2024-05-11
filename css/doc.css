@@ -1,0 +1,79 @@
+
+
+/*---------------------Colors&Font------------------------*/
+h1,h2,h3,p {
+    font-family: "Roboto Flex";
+}
+
+.privacy-policy li,
+.t-c li {
+    font-family: "Roboto Flex";  
+}
+
+.contact-color {
+    color: #6B4812;
+}
+
+.list-weight {
+    font-weight: 600;
+}
+/*--------------------------------------------------------*/
+
+/*---------------------Content----------------------------*/
+.privacy-policy,
+.t-c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.privacy-policy section,
+.t-c section {
+    width: 800px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 70px;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 3rem;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 3rem;
+}
+
+p {
+    font-size: 16px;
+}
+
+li {
+    font-size: 16px;
+}
+/*--------------------------------------------------------*/
+
+/*---------------------Content----------------------------*/
+
+@media(max-width: 390px) {
+
+  .privacy-policy section,
+  .t-c section {
+    width: 300px;
+    text-align: left;
+  }
+
+  p {
+    margin-bottom: 5px;
+  }
+
+
+
+
+}

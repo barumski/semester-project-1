@@ -1,0 +1,267 @@
+
+
+/*---------------------------------------------------*/
+
+body {
+    background-color: black;
+}
+
+h1,h2,h3,p {
+    font-family: "Roboto Flex";
+}
+
+h1 {
+    font-size: 75px;
+    font-weight: 450;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    margin: 70px 0;
+    color: white;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+}
+
+h3 {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    text-align: left;
+}
+
+.text-1 p,
+.text-2 p {
+    font-size: 23px;
+    color: white;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.seperator-line {
+    height: 1px;
+    background-color: white;
+}
+
+/*---------------------------------------------------*/
+
+
+.museum-info {
+    display: flex;
+    margin-bottom: 120px;
+}
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    background: radial-gradient(#6B4812, #1f1405);
+    margin-left: 15%;
+    margin-right: 10px;
+}
+
+.info-image {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.text-1,
+.text-2 {
+    align-self: center;
+    width: 300px;
+}
+
+.text-1 {
+    margin-top: 50px;
+}
+
+.text-2 {
+    margin-top: 20px;
+}
+
+.information-title {
+    background: linear-gradient(to right,#6B4812, #1f1405);
+    margin: 40px 300px 0 300px;
+    padding: 5px 20px;
+}
+
+.contents-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.for-kids,
+.for-teachers,
+.for-researchers {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.for-kids {
+    margin-left: 300px;
+    margin-right: 10px
+}
+
+.for-researchers {
+    margin-right: 300px;
+    margin-left: 10px;
+}
+
+/*---------------------------------------------------*/
+@media(max-width: 810px) {
+
+    .text-1 p,
+    .text-2 p {
+        font-size: 16px;
+    }
+
+    .info-text {
+        width: 400px;
+        margin-left: 20px;
+    }
+
+    .info-image {
+        width: 400px;
+        margin-right: 20px;
+    }
+
+    .info-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .information-title {
+        width: 730px;
+        margin: 0 20px;
+        align-items: center;
+    }
+
+    .contents-container {
+        width: 730px;
+    }
+
+    .for-kids,
+    .for-teachers,
+    .for-researchers {
+        width: 250px;
+    }
+
+    .for-kids img,
+    .for-teachers img {
+        width: 240px;
+        height: auto;
+    } 
+
+    .for-researchers img {
+        width: 250px;
+        height: 346px;
+    }
+
+    .for-kids {
+        margin: 0 10px 20px 20px;
+    }
+
+    .for-teachers {
+        margin: 0 10px 20px 10px 
+    }
+
+    .for-researchers {
+        margin: 0 10px 20px 10px;
+    }
+
+
+}
+
+/*---------------------------------------------------*/
+
+@media(max-width: 390px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .text-1 p,
+    .text-2 p {
+        font-size: 16px;
+    }
+
+    .museum-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-text {
+        width: 300px;
+        margin-left: 10px;
+    }
+
+    .text-1 {
+        margin-bottom: 0;
+        width: 260px;
+    }
+
+    .text-2 {
+        margin-bottom: 15px;
+        width: 260px;
+    }
+
+    .info-image {
+        width: 300px;
+        margin-right: 10px;
+    }
+
+    .info-image img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .information-title {
+        width: 300px;
+        margin: 0 25px;
+        align-items: center;
+    }
+
+    .contents-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .for-kids,
+    .for-teachers,
+    .for-researchers {
+        width: 300px;
+    }
+
+    .for-kids {
+        margin-left: 10px;
+        margin-bottom: 40px;
+    }
+
+    .for-researchers {
+        margin-right: 10px;
+        margin-top: 40px;
+    }
+
+
+}
