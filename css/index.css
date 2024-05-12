@@ -2,33 +2,24 @@
 body {
     background-color: black;
 }
-.title-container {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    width: 100%;
 
-}
-
-.title-image-container {
-    position: relative;
-    max-width: 100%;
-}
-
-.title-image-container img {
-    width: 100%;
-    display: flex;
-    filter: brightness(70%);
-}
-
-.overlay-text {
-    position: absolute;
+.h1,
+.h2,
+h3,
+.content-overlay-1 p,
+.content-overlay-2 p,
+.content-overlay-3 p,
+.museum-container section h6 {
+    font-family: "Roboto Flex";
     color: white;
-    font-family: "Roboto Flex";  
-    text-shadow: 1px 2px 2px black;  
-    transform: translate(-50%);
+}
+
+h4,
+h5,
+.visit-text-left p,
+.visit-text-right p {
+    color: white;
+    font-family: "Red Hat Display";
 }
 
 .h1 {
@@ -52,22 +43,77 @@ body {
     letter-spacing: 2px;
 }
 
+.overlay-text {
+    position: absolute;
+    transform: translate(-50%);
+}
+
+h3 {
+    margin-left: 30px;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 0 20px;
+}
+
+h4 {
+    font-size: 45px;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+h5 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.visit-text-left p,
+.visit-text-right p {
+    font-size: 18px;
+}
+
+.content-overlay-1 p,
+.content-overlay-2 p,
+.content-overlay-3 p {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.museum-container section h6 {
+    font-size: 45px;
+    font-weight: 500;
+}
+
+/*---------------------------------------------------*/
+
+.title-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+.title-image-container {
+    position: relative;
+    max-width: 100%;
+}
+
+.title-image-container img {
+    width: 100%;
+    display: flex;
+    filter: brightness(70%);
+}
+
 /*---------------------------------------------------*/
 
 
 .content-title {
     background: linear-gradient(to right,#6B4812, #1f1405);
     margin: 70px 280px 0 280px;
-    padding: 5px 20px;
-}
-
-h3 {
-    color: white;
-    font-family: "Roboto Flex";
-    margin-left: 30px;
-    font-size: 25px;
-    font-weight: 500;
-
+    padding: 5px 0;
 }
 
 .contents-container {
@@ -114,44 +160,10 @@ h3 {
     top: 90%;
 }
 
-.content-overlay-1 p,
-.content-overlay-2 p,
-.content-overlay-3 p {
-    margin: 0;
-    color: white;
-    font-size: 25px;
-    font-family: "Roboto Flex";
-    font-weight: 500;
-}
-
 /*---------------------------------------------------*/
-
-h4 {
-    font-size: 45px;
-    padding-top: 30px;
-    margin-bottom: 20px;
-}
-
-h5 {
-    font-size: 28px;
-    margin-bottom: 15px;
-}
-
-.visit-text-left p,
-.visit-text-right p {
-    font-size: 18px;
-}
 
 .visit-text-right p {
     margin-top: 5px;
-}
-
-h4,
-h5,
-.visit-text-left p,
-.visit-text-right p {
-    color: white;
-    font-family: "Red Hat Display";
 }
 
 h5,
@@ -200,7 +212,6 @@ h5,
     height: auto;
 }
 
-
 /*---------------------------------------------------*/
 
 .museum-container {
@@ -226,150 +237,122 @@ h5,
     height: auto;
 }
 
-.museum-container section h6 {
-    color: white;
-    font-family: "Roboto Flex";
-    font-size: 45px;
-    font-weight: 500;
-}
-
 /*---------------------------------------------------*/
 
-@media(max-width: 810px) {
+@media screen and (max-width: 810px) {
 
     .h1 {
-        font-size: 40px;
-        letter-spacing: 10px;
-        top: 5%;
+        font-size: 40px; 
     }
 
     .h2 {
         font-size: 16px;
-        top: 70%;
-        margin: 10px;
-        width: 550px;
-    }
-
-    h3 {
-        font-size: 20px;
-        margin-left: 10px;
-    }
-
-    h5 {
-        font-size: 20px;
-        margin-left: 55px;
-    }
-
-    .contents-container p {
-        font-size: 16px;
+        width: 100%; 
     }
 
     .visit-text-left p,
     .visit-text-right p {
-        font-size: 14px;
-    }
+    font-size: 14px;
+}
 
     .content-title {
-        width: 730px;
-        margin: 40px 20px 0 20px;
-        align-items: center;
+        margin: 40px 20px 0;
     }
 
     .contents-container {
-        width: 730px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 15px;
     }
 
     .content-links-1,
     .content-links-2,
     .content-links-3 {
-        width: 250px;
-    }
-
-    .content-links-1 {
-        margin: 0 10px 20px 20px;
-    }
-
-    .content-links-2 {
-        margin: 0 15px 20px 15px;
-    }
-
-    .content-links-3 {
-        margin: 0 20px 20px 10px;
+        flex: 0 0 calc(33.33% - 10px); 
+        margin: 0 5px; 
     }
 
     .content-links-1 img,
     .content-links-2 img,
     .content-links-3 img {
-        width: 240px;
-        height: auto;
+        width: 100%; 
+        height: auto; 
     }
 
     .content-overlay-1 {
-        top: 85%;
+        top: 90%;
         left: 10%;
     }
-
     .content-overlay-2 {
-        top: 85%;
-        left: 46%;
+        top: 90%;
+        left: 43%;
+    }
+    .content-overlay-3 {
+        top: 90%;
+        left: 72%;
     }
 
-    .content-overlay-3 {
-        top: 85%;
-        left: 77%;
+    .content-overlay-1 p,
+    .content-overlay-2 p,
+    .content-overlay-3 p {
+        font-size: 16px; 
     }
 
     .visit-container {
-        width: 770px;
-        margin: 20px;
+        margin: 50px 20px; 
     }
+
+    h5 {
+        font-size: 20px;
+        margin-left: 25px;
+    }
+
 
     .visit-text-left,
     .visit-text-right {
-        width: 350px;
+        width: 100%; 
+        margin-left: 55px; 
     }
 
     .visit-text-left p,
-    .visit-text-right p  {
-        margin-left: 55px;
+    .visit-text-right p {
+        margin-left: 25px; 
     }
 
     .visit-image {
-        margin-top: 270px;
-        margin-bottom: 20px;
-    }
-
-    .museum-container section {
-        top: 60%;
-        left: 35%;
+        margin-top: 50px; 
     }
 
     .museum-container section h6 {
         font-size: 30px;
     }
 
+    .museum-container section {
+        left: 35%;
+        top: 80%; 
+        transform: translate(-50%, -50%);
+    }
 }
 
 /*---------------------------------------------------*/
 
-@media(max-width: 390px) {
-
-    .h1{
-        font-size: 35px;
-        letter-spacing: 3px;
-        top: 5%;
+@media screen and (max-width: 430px) {
+    .h1 {
+        font-size: 20px;
+        letter-spacing: 5px;
     }
 
     .h2 {
-        font-size: 12px;
-        top: 75%;
-        margin: 10px;
-        width: 350px;
+        font-size: 8px;
+        width: 100%;
+        top: 55%;
     }
 
     h3 {
-        font-size: 20px;
-        margin-left: 5px;
+        font-size: 20px; 
+        margin-left: 0; 
+        padding: 0 10px; 
     }
 
     h4 {
@@ -385,95 +368,73 @@ h5,
     .visit-text-right p {
         font-size: 12px;
     }
-    
-    .contents-container p {
-        font-size: 18px;
-    }
-
-    .title-container {
-        margin: 0;
-    }
-
-    .title-image-container img {
-        width: 100%;
-        height: 300px;
-    }
 
     .content-title {
-        width: 310px;
-        margin-left: 20px;
-        margin-bottom: 0;
+        margin: 40px 10px 0 10px; 
     }
 
     .contents-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contents-container img {
-        width: 100%;
-        height: auto;
+        flex-direction: column; 
+        align-items: center; 
+        margin: 0 10px;
     }
 
     .content-links-1,
     .content-links-2,
     .content-links-3 {
-        margin: 0 20px 10px 20px;
+        margin: 0;
+    }
+
+    .content-links-1 img,
+    .content-links-2 img,
+    .content-links-3 img {
+        width: 100%; 
+        height: auto; 
     }
 
     .content-overlay-1 {
+        left: 20%;
         top: 30%;
-        left: 22%;
     }
 
     .content-overlay-2 {
-        top: 63%;
-        left: 22%;
+        left: 20%;
+        top: 64%;
     }
+
     .content-overlay-3 {
-        top: 96%;
-        left: 33%;
+        left: 30%;
+        top: 97%;
     }
-    
+
     .visit-container {
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        margin: 20px;
+        margin: 40px 10px; 
     }
 
     .visit-content {
-        display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
     .visit-text-left,
     .visit-text-right {
-        width: 300px;
+        width: 90%; 
+        padding: 0 10px;
+        margin: 5px; 
     }
 
-    .visit-text-left p {
-        margin-left: 25px;
+    .visit-image img {
+        width: 100%; 
+        margin: 5px;
     }
-
-    .hours p {
-        margin-left: 25px;
-    }
-
-    .visit-image {
-        margin-top: 40px;
-    }
-
-    .museum-container section {
-        top: 50%;
-        left: 40%;
-    }
-
+    
     .museum-container section h6 {
         font-size: 16px;
         text-wrap: nowrap;
     }
 
+    .museum-container section {
+        left: 40%; 
+        top: 80%; 
+    }
 }
-

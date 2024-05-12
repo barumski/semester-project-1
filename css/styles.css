@@ -202,45 +202,6 @@ footer {
         margin-right: 40px;
     }
 
-}
-
-/*---------------Hamburger menu hidden---------------*/
-
-@media(max-width: 610px){
-    .menu {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 70%;
-        height: 80vh;
-        position: fixed;
-        top: 0;
-        right: -100%;
-        z-index: 100;
-        background: linear-gradient(to right,#6B4812, #1f1405);
-        opacity: 0.90;
-        transition: all 0.2s ease-in-out;
-    }
-
-    .menu li {
-        margin-top: 10px;
-    }
-
-    .menu li a {
-        padding: 10px;
-        font-size: 24px;
-    }
-
-    .open-menu , .close-menu {
-        display: block;
-    }
-
-    #check:checked ~ .menu {
-        right: 0;}
-}
-
-@media(max-width: 390px) {
-
     .logo img {
         width: 70%;
         margin-left: 2px;
@@ -273,4 +234,40 @@ footer {
     }
 
 
+
+}
+
+/*---------------Hamburger menu hidden---------------*/
+
+@media(max-width: 810px){
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        height: 80vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background: linear-gradient(to right,#6B4812, #1f1405);
+        opacity: 0.90;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .menu li {
+        margin-top: 10px;
+    }
+
+    .menu li a {
+        padding: 10px;
+        font-size: 24px;
+    }
+
+    .open-menu , .close-menu {
+        display: block;
+    }
+
+    #check:checked ~ .menu {
+        right: 0;}
 }

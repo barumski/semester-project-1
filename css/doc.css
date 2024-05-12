@@ -61,7 +61,7 @@ li {
 
 /*---------------------Content----------------------------*/
 
-@media(max-width: 390px) {
+@media screen and (max-width: 810px) {
 
   .privacy-policy section,
   .t-c section {
@@ -72,8 +72,5 @@ li {
   p {
     margin-bottom: 5px;
   }
-
-
-
-
+  
 }

@@ -24,6 +24,7 @@ h2 {
     font-size: 25px;
     font-weight: 500;
     color: white;
+    margin-left: 20px;
 }
 
 h3 {
@@ -49,7 +50,7 @@ p {
 .exhibition-title {
     background: linear-gradient(to right,#6B4812, #1f1405);
     margin: 40px 300px 0 300px;
-    padding: 5px 20px;
+    padding: 5px 0;
 }
 
 .news-container,
@@ -108,7 +109,7 @@ p {
 
 /*---------------------------------------------------*/
 
-@media(max-width: 810px) {
+@media screen and (max-width: 810px) {
 
     h3 {
         font-size: 18px;
@@ -120,9 +121,17 @@ p {
 
     .news-title,
     .exhibition-title {
-        width: 730px;
-        margin: 0 20px;
-        align-items: center;
+        margin: 40px 20px 0;
+    }
+
+    .news-container,
+    .exhibition-container-1,
+    .exhibition-container-2 {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-between;
+        margin-bottom: 100px;
+        padding: 0 20px;
     }
 
     .news-1,
@@ -133,7 +142,70 @@ p {
     .exhibition-3,
     .exhibition-4,
     .exhibition-5 {
-        width: 250px;
+        width: auto; 
+        margin: 20px 0; 
+    }
+
+    .news-1,
+    .news-2,
+    .news-3,
+    .exhibition-1,
+    .exhibition-2,
+    .exhibition-3,
+    .exhibition-4,
+    .exhibition-5 {
+        width: calc(33.33% - 20px); 
+        margin-bottom: 20px; 
+    }
+
+    .exhibition-5 {
+        margin-right: 270px;    
+    }
+}
+/*---------------------------------------------------*/
+
+@media screen and (max-width: 430px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .news-title,
+    .exhibition-title {
+        margin: 20px;
+        width: auto;
+    }
+
+    .news-container,
+    .exhibition-container-1,
+    .exhibition-container-2 {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .news-1,
+    .news-2,
+    .news-3,
+    .exhibition-1,
+    .exhibition-2,
+    .exhibition-3,
+    .exhibition-4,
+    .exhibition-5 {
+        margin: 0;
+        width: auto;
     }
 
     .news-1 img,
@@ -144,82 +216,12 @@ p {
     .exhibition-3 img,
     .exhibition-4 img,
     .exhibition-5 img {
-        width: 240px;
+        max-width: 100%;
         height: auto;
     }
 
-    .news-3 img {
-        margin-bottom: 21px;
-    }
 
-    .news-1,
-    .exhibition-1,
-    .exhibition-4,
-    .exhibition-3 {
-        margin: 0 10px 20px 20px;
-    }
 
-    .news-2 {
-        margin: 0 10px 20px 10px; 
-    }
 
-    .news-3 {
-        margin: 0 15px 20px 10px;
-    }
 
-}
-
-/*---------------------------------------------------*/
-
-@media(max-width: 390px) {
-
-    h1 {
-        font-size: 40px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    .news-title,
-    .exhibition-title {
-        width: 300px;
-        margin: 0 25px;
-        align-items: center;
-    }
-
-    .news-container,
-    .exhibition-container-1,
-    .exhibition-container-2 {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .news-1,
-    .news-2,
-    .news-3,
-    .exhibition-1,
-    .exhibition-2,
-    .exhibition-3,
-    .exhibition-4,
-    .exhibition-5 {
-        width: 300px;
-    }
-
-    .news-1,
-    .exhibition-1,
-    .exhibition-4 {
-        margin-left: 10px;
-        margin-bottom: 40px;
-    }
-
-    .news-3,
-    .exhibition-3 {
-        margin-right: 10px;
-        margin-top: 40px;
-    }
-
-    .exhibition-5 {
-        margin-right: 10px;
-    }
 }

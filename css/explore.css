@@ -24,6 +24,7 @@ h2 {
     font-size: 25px;
     font-weight: 500;
     color: white;
+    padding: 0 20px;
 }
 
 h3 {
@@ -92,9 +93,11 @@ p {
 }
 
 .information-title {
+    display: flex;
+    align-items: center;
     background: linear-gradient(to right,#6B4812, #1f1405);
-    margin: 40px 300px 0 300px;
-    padding: 5px 20px;
+    margin: 40px 300px 0 300px; 
+
 }
 
 .contents-container {
@@ -123,145 +126,127 @@ p {
 }
 
 /*---------------------------------------------------*/
-@media(max-width: 810px) {
+@media screen and (max-width: 810px) {
 
     .text-1 p,
-    .text-2 p {
+    .text-2 p{
         font-size: 16px;
     }
 
     .info-text {
-        width: 400px;
-        margin-left: 20px;
+        width: 50%;
+        margin: 10px; 
     }
 
     .info-image {
-        width: 400px;
-        margin-right: 20px;
+        width: 50%;
+        margin: 10px; 
     }
 
     .info-image img {
-        width: 100%;
+        max-width: 100%; 
         height: auto;
     }
 
+    .museum-info {
+        flex-direction: row; 
+        margin-bottom: 40px; 
+    }
+
     .information-title {
-        width: 730px;
-        margin: 0 20px;
-        align-items: center;
+        margin: 40px 20px 0; 
     }
 
     .contents-container {
-        width: 730px;
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: space-between; 
+        margin-bottom: 100px; 
+        padding: 0 20px; 
     }
 
     .for-kids,
     .for-teachers,
     .for-researchers {
-        width: 250px;
-    }
-
-    .for-kids img,
-    .for-teachers img {
-        width: 240px;
-        height: auto;
-    } 
-
-    .for-researchers img {
-        width: 250px;
-        height: 346px;
+        width: calc(33.33% - 20px); 
+        margin-bottom: 20px; 
     }
 
     .for-kids {
-        margin: 0 10px 20px 20px;
-    }
-
-    .for-teachers {
-        margin: 0 10px 20px 10px 
+        margin-left: 0; 
+        margin-right: 10px; 
     }
 
     .for-researchers {
-        margin: 0 10px 20px 10px;
+        margin-right: 0; 
+        margin-left: 10px; 
     }
-
-
 }
 
 /*---------------------------------------------------*/
 
-@media(max-width: 390px) {
+@media screen and (max-width: 430px) {
 
     h1 {
-        font-size: 40px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    .text-1 p,
-    .text-2 p {
-        font-size: 16px;
+        font-size: 45px; 
+        margin: 30px 0;
     }
 
     .museum-info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; 
+        margin-bottom: 60px; 
     }
 
     .info-text {
-        width: 300px;
-        margin-left: 10px;
-    }
-
-    .text-1 {
-        margin-bottom: 0;
-        width: 260px;
-    }
-
-    .text-2 {
-        margin-bottom: 15px;
-        width: 260px;
+        margin: 20px;
+        width: auto;
     }
 
     .info-image {
-        width: 300px;
-        margin-right: 10px;
+        margin: 20px;
+        width: auto;
     }
 
-    .info-image img {
-        width: 100%;
-        height: auto;
+    .text-1,
+    .text-2 {
+        margin: 0 20px;
+        width: auto; 
     }
-    
+
+    .text-1 {
+        margin-top: 20px;
+    }
+
+    .text-2 {
+        margin-bottom: 10px;
+    }
+
     .information-title {
-        width: 300px;
-        margin: 0 25px;
-        align-items: center;
+        margin: 20px 20px 0 20px; 
     }
 
     .contents-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; 
+        margin-bottom: 60px; 
     }
 
     .for-kids,
     .for-teachers,
     .for-researchers {
-        width: 300px;
+        margin: 0;
+        width: auto;
     }
 
-    .for-kids {
-        margin-left: 10px;
-        margin-bottom: 40px;
+    .for-kids img,
+    .for-teachers img,
+    .for-researchers img {
+        max-width: 100%;
+        height: auto; 
     }
 
-    .for-researchers {
-        margin-right: 10px;
-        margin-top: 40px;
+    .for-kids-text,
+    .for-teachers-text,
+    .for-researchers-text {
+        padding: 0 10px; 
     }
-
-
 }

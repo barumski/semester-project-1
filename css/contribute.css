@@ -63,7 +63,7 @@ p {
     font-size: 24px;
 }
 
-@media(max-width: 390px) {
+@media(max-width: 810px) {
 
     h1 {
         font-size: 40px;
