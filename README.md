@@ -20,6 +20,7 @@ The design focuses on clarity, responsiveness, and user experience across device
 - Exhibitions page
 - Contribute page
 - Contact page
+- About page
 - Privacy policy and Terms pages
 
 
