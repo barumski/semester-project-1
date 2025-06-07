@@ -33,8 +33,8 @@ The design focuses on clarity, responsiveness, and user experience across device
 
 ## Links
 
-- Live link: https://barumski.github.io/semester-project-1/
-- GitHub link: https://github.com/barumski/semester-project-1.git
+- **Live link:** [Click here](https://barumski.github.io/semester-project-1/)
+- **GitHub link:** [Click here](https://github.com/barumski/semester-project-1.git)
 
 
 ## Contact 
